@@ -1,0 +1,1 @@
+●	It also writes the both things to the fifo_pipe with write system call, but have to use FD # 1 and call appropriate redirection system calls.

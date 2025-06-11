@@ -1,0 +1,17 @@
+def findGrade(score: Int): String = {
+  if (score >= 90) {
+    "A"
+  } else if (score >= 80) {
+    "B"
+  } else if (score >= 70) {
+    "C"
+  } else if (score >= 60) {
+    "D"
+  } else {
+    "F"
+  }
+}
+
+val studentScore = 85
+val grade = findGrade(studentScore)
+println(s"Student scored $studentScore, which corresponds to grade $grade")

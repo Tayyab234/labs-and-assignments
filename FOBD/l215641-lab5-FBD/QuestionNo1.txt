@@ -1,0 +1,11 @@
+def isPalindrome(str: String): Boolean = {
+  val cleanStr = str.toLowerCase.replaceAll("[^a-z0-9]", "") // Remove non-alphanumeric characters and convert to lowercase
+  cleanStr == cleanStr.reverse
+}
+
+// Test the function
+val inputString1 = "racecar"
+val inputString2 = "hello"
+
+println(s"'$inputString1' is a palindrome: ${isPalindrome(inputString1)}")
+println(s"'$inputString2' is a palindrome: ${isPalindrome(inputString2)}")

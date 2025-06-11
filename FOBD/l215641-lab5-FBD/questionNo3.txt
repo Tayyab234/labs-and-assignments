@@ -1,0 +1,26 @@
+import scala.util.Random
+
+object NumberGuessingGame {
+  def main(args: Array[String]): Unit = {
+    val random = new Random()
+    val secretNumber = random.nextInt(100) + 1 // Generates a random number between 1 and 100
+    var attempts = 0
+    var guess = 0
+    
+    println("Welcome to the Number Guessing Game!")
+    
+    while (guess != secretNumber) {
+      print("Enter your guess: ")
+      guess = scala.io.StdIn.readInt()
+      attempts += 1
+      
+      if (guess < secretNumber) {
+        println("Too low! Try again.")
+      } else if (guess > secretNumber) {
+        println("Too high! Try again.")
+      } else {
+        println(s"Congratulations! You guessed the secret number $secretNumber in $attempts attempts.")
+      }
+    }
+  }
+}

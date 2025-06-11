@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <link rel="stylesheet" href="l215641_styleQ1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Internship Application Form</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Full Name:</label>
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+
+                <label>Contact Information:</label>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <label>Address:</label>
+                <input type="text" name="street" placeholder="Street" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="number" name="zip" placeholder="ZIP Code" required>
+            </fieldset>
+
+            <!-- Educational Background -->
+            <fieldset>
+                <legend>Educational Background</legend>
+                <label>Current Academic Status:</label>
+                <select name="academicStatus" required>
+                    <option value="">Select</option>
+                    <option>High School</option>
+                    <option>Undergraduate</option>
+                    <option>Graduate</option>
+                </select>
+
+                <label>School/University:</label>
+                <input type="text" name="university" required>
+
+                <label>Major/Field of Study:</label>
+                <input type="text" name="major" required>
+
+                <label>Expected Graduation Year:</label>
+                <input type="number" name="graduationYear" required>
+            </fieldset>
+
+            <!-- Internship Preferences -->
+            <fieldset>
+                <legend>Internship Preferences</legend>
+                <input type="text" name="position" placeholder="Desired Internship Position" required>
+
+                <label>Preferred Duration:</label>
+                <select name="duration" required>
+                    <option>3 Months</option>
+                    <option>6 Months</option>
+                    <option>12 Months</option>
+                </select>
+
+                <label>Available Start Date:</label>
+                <input type="date" name="startDate" required>
+
+                <label>Preferred Work Mode:</label>
+                <select name="workMode" required>
+                    <option>Remote</option>
+                    <option>On-Site</option>
+                    <option>Hybrid</option>
+                </select>
+            </fieldset>
+
+            <!-- Work Experience -->
+            <fieldset>
+                <legend>Work Experience (Optional)</legend>
+                <input type="text" name="jobTitle" placeholder="Previous Job Title">
+                <input type="text" name="companyName" placeholder="Company Name">
+                <input type="text" name="employmentDates" placeholder="Employment Dates">
+                <textarea name="responsibilities" placeholder="Responsibilities & Skills Learned"></textarea>
+            </fieldset>
+
+            <!-- Additional Qualifications -->
+            <fieldset>
+                <legend>Additional Qualifications</legend>
+                <input type="text" name="skills" placeholder="Relevant Skills">
+                <input type="text" name="certifications" placeholder="Certifications/Online Courses">
+            </fieldset>
+
+            <!-- Documents Upload -->
+            <fieldset>
+                <legend>Documents Upload</legend>
+                <label>Upload Resume:</label>
+                <input type="file" name="resume" required>
+
+                <label>Cover Letter (Optional):</label>
+                <textarea name="coverLetter"></textarea>
+
+                <label>Portfolio:</label>
+                <input type="file" name="portfolioFile">
+                <input type="url" name="portfolioLink" placeholder="Or provide a link">
+            </fieldset>
+
+            <!-- References (Optional) -->
+            <fieldset>
+                <legend>References (Optional)</legend>
+                <input type="text" name="refName" placeholder="Reference Name">
+                <input type="text" name="refContact" placeholder="Contact Information">
+                <input type="text" name="refRelation" placeholder="Relationship to Applicant">
+            </fieldset>
+
+            <!-- Additional Questions -->
+            <fieldset>
+                <legend>Additional Questions</legend>
+                <textarea name="whyIntern" placeholder="Why do you want to intern at this company?" required></textarea>
+                <textarea name="careerGoals" placeholder="What are your career goals after the internship?" required></textarea>
+            </fieldset>
+
+            <!-- Consent -->
+            <label>
+                <input type="checkbox" name="agreement" required> I agree to the Terms and Conditions.
+            </label>
+            <label>
+                <input type="checkbox" name="privacy" required> I acknowledge the Privacy Policy.
+            </label>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
